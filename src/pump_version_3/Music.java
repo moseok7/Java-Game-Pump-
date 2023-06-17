@@ -1,11 +1,10 @@
 package pump_version_3;
 
-import javazoom.jl.player.Player;
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 
-import com.sun.tools.javac.Main;
+import javazoom.jl.player.Player;
 
 public class Music extends Thread {
 	
@@ -22,7 +21,6 @@ public class Music extends Thread {
 			fis = new FileInputStream(file);
 			bis = new BufferedInputStream(fis);
 			player = new Player(bis);
-			
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -32,7 +30,6 @@ public class Music extends Thread {
 		if(player == null) 
 			return 0;
 		return player.getPosition();
-			
 	}
 	
 	public void close() {

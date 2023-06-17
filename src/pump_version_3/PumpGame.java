@@ -20,8 +20,12 @@ public class PumpGame extends JFrame {
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
-		
+
 		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
+		
+		Music introMusic = new Music("introMusic.mp3", true);
+		introMusic.start();
+		
 	}
 	
 	public void paint(Graphics g) {
