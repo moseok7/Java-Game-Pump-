@@ -21,7 +21,7 @@ public class PumpGame extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 
-		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground.jpg")).getImage();
+		introBackground = new ImageIcon(Main.class.getResource("../images/introBackground(Main).jpg")).getImage();
 		
 		Music introMusic = new Music("introMusic.mp3", true);
 		introMusic.start();
